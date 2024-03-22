@@ -6,8 +6,7 @@ let data = fs.readFileSync('title.json', 'utf-8');
 data = JSON.parse(data).map((element) => {
   return {
     title: element.title,
-    createdAt: new Date(),
-    updatedAt: new Date(),
+    createdAt: new Date()
   }
 })
 
