@@ -69,7 +69,6 @@ describe("Todo API Testing", () => {
         .send(data)
         .end(function (err, res) {
           if (err) return done(err);
-          console.log(res);
           expect(res.body.message).toEqual("successfully updated data");
           return done();
         });
@@ -85,7 +84,6 @@ describe("Todo API Testing", () => {
         .send(data)
         .end(function (err, res) {
           if (err) return done(err);
-          console.log(res);
           expect(res.body.message).toEqual("Todo not found");
           return done();
         });
